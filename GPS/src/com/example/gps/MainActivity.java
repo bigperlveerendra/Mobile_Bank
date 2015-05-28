@@ -51,11 +51,9 @@ public class MainActivity extends Activity {
                     LocationAddress locationAddress = new LocationAddress();
                     locationAddress.getAddressFromLocation(latitude, longitude,getApplicationContext(), new GeocoderHandler());
 
-                    // \n is for new line
                     Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude+" and your place"+GeocoderHandler.locationAddress, Toast.LENGTH_LONG).show();
                 } else {
-                    // Can't get location.
-                    // GPS or network is not enabled.
+                     // GPS or network is not enabled.
                     // Ask user to enable GPS/network in settings.
                     gps.showSettingsAlert();
                 }
