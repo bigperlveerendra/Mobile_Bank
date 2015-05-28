@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">settings</string>
+    <string name="title_activity_loginsuccess">Loginsuccess</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_activity_selected">SelectedActivity</string>
+    <string name="title_activity_sign_up">SignUp</string>
+
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DBHelper.java&apos; to &apos;Test/src/com.example.test&apos;&#x0D;&#x0A;- Original project: &apos;AndroidSecondDBApplications&apos;&#x0D;&#x0A;- Destination element: &apos;Test/src/com.example.test&apos;&#x0D;&#x0A;- Original element: &apos;com.examples.androidseconddbapplications.DBHelper.java&apos;" description="Copy compilation unit" destination="=Test/src&lt;com.example.test" element1="/src&lt;com.examples.androidseconddbapplications{DBHelper.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1430236460467" units="1" version="1.0"/>
+</session>

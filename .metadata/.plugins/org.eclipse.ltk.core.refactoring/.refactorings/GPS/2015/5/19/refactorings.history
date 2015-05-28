@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;CustomerApp/src/com.example.mobilebankingapp&apos;&#x0D;&#x0A;- Original project: &apos;GPS&apos;&#x0D;&#x0A;- Destination element: &apos;CustomerApp/src/com.example.mobilebankingapp&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.example.gps.GPSTracker.java&#x0D;&#x0A;     com.example.gps.LocationAddress.java&#x0D;&#x0A;     com.example.gps.GeocoderHandler.java" description="Copy compilation units" destination="=CustomerApp/src&lt;com.example.mobilebankingapp" element1="/src&lt;com.example.gps{GPSTracker.java" element2="/src&lt;com.example.gps{LocationAddress.java" element3="/src&lt;com.example.gps{GeocoderHandler.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1430856373530" units="3" version="1.0"/>
+</session>

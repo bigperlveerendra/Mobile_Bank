@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:background="#0033FF">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Registration Form "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="65dp"
+        android:text="First name:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passowrdTextView"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="20dp"
+        android:text="Email:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passowrdTextView"
+        android:layout_alignLeft="@+id/usernameEditText"
+        android:layout_marginTop="12dp"
+        android:ems="6" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ageTextView"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:ems="6" />
+
+    <TextView
+        android:id="@+id/mobileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ageTextView"
+        android:layout_below="@+id/ageTextView"
+        android:layout_marginTop="15dp"
+        android:text="Mobie no:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/passowrdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nameTextView"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginTop="23dp"
+        android:text="Last name:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mobileTextView"
+        android:layout_alignLeft="@+id/ageEditText"
+        android:layout_below="@+id/ageEditText"
+        android:ems="6"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_below="@+id/mobileTextView"
+        android:layout_marginTop="26dp"
+        android:text="Gender:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phoneEditText"
+        android:layout_alignTop="@+id/genderTextView" >
+
+        <RadioButton
+            android:id="@+id/radio0Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/radio1Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female" />
+
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/genderTextView"
+        android:text="Add" 
+        android:ems="6"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passowrdTextView"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/nameTextView"
+        android:ems="6" />
+
+</RelativeLayout>
+</ScrollView>

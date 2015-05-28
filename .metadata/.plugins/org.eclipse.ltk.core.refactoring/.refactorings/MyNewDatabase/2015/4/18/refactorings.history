@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;AddTodoActivity.java&apos; to &apos;Mydatabse/src/com.javatechig.todo&apos;&#x0D;&#x0A;- Original project: &apos;MyNewDatabase&apos;&#x0D;&#x0A;- Destination element: &apos;Mydatabse/src/com.javatechig.todo&apos;&#x0D;&#x0A;- Original element: &apos;com.example.mynewdatabase.AddTodoActivity.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Mydatabse/src&lt;com.javatechig.todo" element1="/src&lt;com.example.mynewdatabase{AddTodoActivity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1430158402071" units="1" version="1.0"/>
+</session>
