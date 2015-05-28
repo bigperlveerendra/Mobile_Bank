@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CC33FF" >
+
+    <Button
+        android:id="@+id/WithdrawButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TV_amount"
+        android:layout_marginTop="82dp"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/ET_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TV_amount"
+        android:layout_alignBottom="@+id/TV_amount"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TV_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="135dp"
+        android:layout_toLeftOf="@+id/ET_amount"
+        android:text="Amount"
+        android:textSize="20sp" />
+
+    </RelativeLayout>

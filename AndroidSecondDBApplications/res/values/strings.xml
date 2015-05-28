@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">AndroidSecondDBApplications</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_add_emp">AddEmpActivity</string>
+    <string name="title_activity_emp_delete">EmpDelete</string>
+    <string name="title_activity_get_emp">GetEmp</string>
+    <string name="title_activity_update_emp">UpdateEmp</string>
+
+</resources>

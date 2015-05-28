@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3289cd" >
+
+    <Button
+        android:id="@+id/deposit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="43dp"
+        android:text="Deposit" />
+
+    <Button
+        android:id="@+id/withdraw_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="With Draw" />
+
+    <Button
+        android:id="@+id/enquiry_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/deposit_button"
+        android:layout_marginTop="34dp"
+        android:text="Balance" />
+    
+</RelativeLayout>

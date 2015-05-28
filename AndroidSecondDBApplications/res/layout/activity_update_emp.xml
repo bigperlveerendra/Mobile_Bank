@@ -1,0 +1,50 @@
+
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="36dp"
+            android:layout_y="65dp"
+            android:text="Employee Id" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="146dp"
+            android:text="Employee Name" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_x="168dp"
+            android:layout_y="52dp"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_x="167dp"
+            android:layout_y="138dp"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="110dp"
+            android:layout_y="244dp"
+            android:text="Update" />
+
+    </AbsoluteLayout>
