@@ -26,7 +26,7 @@ import android.widget.Toast;
 
 public class Deposit extends Activity implements OnClickListener {
 
-	private EditText usernameEditText, passwordEditText, SecretText,DepositAmount;
+	private EditText usernameEditText, passwordEditText, SecretText,DepositAmount,acct_no;
 	private Button WithdrawButton, enquiryButton, depositButton;
 	private int regID;
 	String SetServerString = "";
@@ -45,6 +45,7 @@ public class Deposit extends Activity implements OnClickListener {
 	private void initializeComponenets() {
 		depositButton = (Button) findViewById(R.id.DepositButton);
 		DepositAmount=(EditText)findViewById(R.id.ET_amount);
+		acct_no=(EditText) findViewById(R.id.ET_Acct_no);
 		depositButton.setOnClickListener(this);
 		
 	}
@@ -72,18 +73,19 @@ public class Deposit extends Activity implements OnClickListener {
 		@Override
 		protected Boolean doInBackground(String... params) {
 			String Amount = params[0];
+			String Acct_No=params[1];
 			//String password = params[1];
 
-			boolean result = test(Amount);
+			boolean result = test(Amount,Acct_No);
 			return result;
 
 		}
 
-		private boolean test(String Amount) {
+		private boolean test(String Amount, String Acct_NO) {
 			try {
 				
 				String getRequest = "http://"+Config.getIP()+":8080/MobileBankingApp/Deposit?";
-				String params = "Amount='" + Amount +"'";
+				String params = "Amount='" + Amount +"'&Acct_NO='"+ Acct_NO + "'";
 				HttpClient Client = new DefaultHttpClient();
 				//URL url = new URL(getRequest + params);
 
@@ -132,7 +134,7 @@ public class Deposit extends Activity implements OnClickListener {
 				//i.putExtra("regID", regID);
 				//startActivity(i);
 				// need to add code
-				Toast.makeText(getApplicationContext(),"Successfully Deposited", 3000).show();
+				Toast.makeText(getApplicationContext(),"Successfully Transferred", 3000).show();
 				//Intent i = new Intent(getApplicationContext(), com.example.mobilebankingapp.Secret.class);
 				//Bundle extras = new Bundle();
 				/*extras.putString("B",B);
@@ -164,8 +166,9 @@ public class Deposit extends Activity implements OnClickListener {
 			break; 
 		case R.id.DepositButton:
 			String Amount = DepositAmount.getText().toString();
+			String Acct_No=acct_no.getText().toString();
 			//String password = passwordEditText.getText().toString();
-			String[] array = { Amount };
+			String[] array = { Amount,Acct_No};
 			new MyTest().execute(array);
 			
 			// Toast.makeText(this,"you clicked on login", 2000).show();

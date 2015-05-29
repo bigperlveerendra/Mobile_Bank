@@ -36,4 +36,25 @@
         android:text="Amount"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/TV_Acct_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ET_amount"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="41dp"
+        android:text="Enter Acct No."
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ET_Acct_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TV_Acct_No"
+        android:layout_alignBottom="@+id/TV_Acct_No"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TV_Acct_No"
+        android:ems="10"
+        android:inputType="number" />
+
     </RelativeLayout>
