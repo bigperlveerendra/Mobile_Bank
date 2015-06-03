@@ -1,11 +1,7 @@
 package com.worker.employment;
-
 import java.io.Serializable;
 
 public class MyWork implements Serializable{
-	
-	
-	
 	public int id;
 	public String description;
 	public int days;

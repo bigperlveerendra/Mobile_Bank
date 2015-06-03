@@ -1,18 +1,7 @@
 package com.example.gps;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
-
 import android.app.Activity;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -51,17 +40,13 @@ public class MainActivity extends Activity {
                     LocationAddress locationAddress = new LocationAddress();
                     locationAddress.getAddressFromLocation(latitude, longitude,getApplicationContext(), new GeocoderHandler());
 
-<<<<<<< HEAD
+
                     Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude+" and your place"+GeocoderHandler.locationAddress, Toast.LENGTH_LONG).show();
-                } else {
-                     // GPS or network is not enabled.
-=======
-                    // \n is for new line
-                    Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude+" and your place"+GeocoderHandler.locationAddress, Toast.LENGTH_LONG).show();
-                } else {
+                } 
+                	else {
                     // Can't get location.
                     // GPS or network is not enabled.
->>>>>>> afc1b2c4d8d124524d0b08a7b398d1fd9b919c52
+
                     // Ask user to enable GPS/network in settings.
                     gps.showSettingsAlert();
                 }
